@@ -1,85 +1,258 @@
 body {
-        background-color: black;
+  background-color: black;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 17px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #c9fbf8;
 }
 
-body {
-        font-family: 'Josefin Sans', sans-serif;
-            font-size: 16px; /* Sets the font size to 16px */
-            font-weight: 300; /* Sets the font weight to 300 */
-            line-height: 2; /* Sets the line-height to 1.6 * the font-size */
-            color: #c9fbf8;
+h1 h2 h3 h4 {
+  line-height: 2;
 }
 
-h1, h2, h3, h4 {
-    line-height: 2;
-}
-
-h1 {
-    font-size: 2.75em;
-    font-weight: 600;
+h1 span {
+  font-size: 65%;
+  font-weight: 600;
+  display: block;
+  margin-top: 2em;
 }
 
 h2 {
-    font-size: 2.25em;
-    font-weight: 600;
+  font-size: 2.25em;
+  font-weight: 600;
+  margin-top: 0;
 }
 
 h3 {
-    font-size: 1.5em;
-    font-weight: 500;
+  font-size: 1.25em;
+  font-weight: 600;
+  margin-bottom: 0;
 }
 
 h4 {
-    font-size: 1.35em;
-    font-weight: 400;
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+p {
+  margin: 0.6em 0;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 a {
-    color: #FFFFFF;
-    text-decoration: none; /* No underlining */
-}
-
-a:active { /* selected link */
-    color: #BC0913;
+  color: #ffff;
+  text-decoration: none; /* No underlining */
 }
 
 a:visited { /* visited link */
-    color: #FF9878;
+  color: #ff9878;
 }
 
-a:hover {
-    color: #FFC46B;
-    text-decoration: underline; /* Underlining when hovering over a link */
+a:hover,
+a:focus {
+  color: #ffc46b;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+
+a:active { /* selected link */
+  color: #bc0913;
 }
 
 .button {
-    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-    background-color: #93ccc6;
-    color: #ffffff; /* needed to override the default link color */
-    font-weight: 400;
-    padding: 10px;
-    border-radius: 3px;
-    border-bottom: 2px solid #93ccc6; /* width of the border, type, color */
-    transition: 0.3s opacity;
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #93ccc6;
+  color: #ffff; /* needed to override the default link color */
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 10px;
+  border-bottom: 2px solid #93ccc6; /* width of the border, type, color */
+  transition: 0.3s opacity;
+  text-decoration: none;
+  text-align: center;
+}
+
+.button:visited {
+  color: #ffff;
 }
 
 .button:hover {
-    opacity: 0.7; /* Reduces the opacity of the button to 80% */
-    text-decoration: none;
+  opacity: 0.7; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
 }
 
 .button.contact {
-    background-color: transparent;
-    color: #dc93fe;
-    text-transform: uppercase;
-    border: 2px solid #dc93fe;
+  background-color: transparent;
+  color: #dc93fe;
+  text-transform: uppercase;
+  border: 2px solid #dc93fe;
 }
 
 .button.contact:hover {
-    background-color: #dc93fe;
-    color: #ffffff;
+  background-color: #dc93fe;
+  color: #ffff;
+}
+
+.logo img {
+  max-width: 250px;
+}
+
+.name-intro img {
+  max-width: 60%;
+}
+
+.name-intro {
+  text-align: center;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  gap: 25px;
+}
+
+header {
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  background-color: rgba(000, 000, 000, 0.8);
+  backdrop-filter: blur(5px) invert(80%);
+}
+
+.container {
+  padding: 0 15px;
+}
+
+nav a {
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: #ffff;
+} 
+
+nav a:hover, nav a:focus {
+  text-decoration: none;
+  color: #ff9878;
+}
+
+nav a:active {
+  color: #ffff;
+}
+
+section {
+  padding: 2em 0;
+}
+
+.work .row {
+  display: flex;
+  flex-direction: column;
+}
+
+.work-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+}
+
+.work .column {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  padding-top: 147.89px;
+}
+
+footer {
+  background-color: #93ccc6;
+  color: black;
+  padding: 2em 0 0;
+  text-align: center;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-weight: 600;
+}
+
+.copyright {
+  color: #bc0913;
+  font-weight: 300;
+}
+
+.social {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  gap: 25px;
+}
+
+.skills-tools ul {
+  list-style: none;
+  padding: 0;
+  color: #ffff;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1em;
+  font-weight: 600;
+}
+.skills-tools .column:last-child ul li{
+  background-color: #f8825d;
+}
+
+.project-welcome {
+  text-align: center;
+}
+
+.project-intro {
+  text-align: center;
+}
+
+.project-content {
+  text-align: center;
+}
+
+.skills-tools li {
+  padding: 16px 40px;
+  text-align: center;
+  background-color: #ffb951;
+  border-radius: 15px;
+}
+
+.about img {
+  margin-bottom: 30px;
+  border-radius: 15px;
+}
+
+.about p {
+  margin-bottom: 20px;
+}
+
+footer h2 {
+  margin-bottom: 0;
+}
+
+.work-wrapper img {
+  border: 1px solid #ffff;
+  border-radius: 15px;
 }
