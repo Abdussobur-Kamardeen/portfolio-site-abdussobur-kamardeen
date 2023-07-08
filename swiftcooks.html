@@ -20,15 +20,18 @@
 <body>
     <header>
         <div class="container">
+            <div class="navtoggle" id="myNavtoggle">
             <a class="logo" href="index.html"><img src="img/website-imgs/abdussobur-kamardeen.svg" alt="Abdussobur Kamardeen Logo"></a>
             <nav>
                 <ul>
                     <li><a href="index.html">Work</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="#contact">Contact</a></li>
-                </ul>
+                    <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa-solid fa-bars"></i></a></li>
+                </ul>               
             </nav>
         </div>
+        </div>     
     </header>
     <main>
         <section class="project-welcome">
@@ -90,7 +93,7 @@
                     <p>I ran a competitive analysis on Kitchen stories and My new roots. These are my following thoughts:</p>
                 </div>
                 <div class="row competitive-analysis">
-                    <div class="column">
+                    <div class="column text-block">
                         <img src="img/website-imgs/kitchen-stories-1.svg" alt="kitchen stories logo">
                         <p>Strengths</p>
                         <ul>
@@ -105,7 +108,7 @@
                             <li>The more from option shouldn`t be so bold in the middle of the home page.</li>
                         </ul>
                     </div>
-                    <div class="column">
+                    <div class="column text-block">
                         <img src="img/website-imgs/my-new-roots.svg" alt="my new roots logo">
                         <p>Strengths</p>
                         <ul>
@@ -124,7 +127,7 @@
                     </div>
                 </div>
                 <div class="button-wrapper">
-                    <a class="button" src="img/website-imgs/competitive analysis.pdf">View PDF</a>
+                    <a class="button" href="img/website-imgs/competitive-analysis.pdf">View PDF</a>
                 </div>
             </div>
         </section>
@@ -169,6 +172,8 @@
                 <div class="text-block">
                     <h3>Midfi screens</h3>
                     <p>These are the final results after the testing and feedback.</p>
+                </div>
+                <div class="image-block">
                     <div class="slide-wrapper mobile-screens">
                         <img src="img/website-imgs/home.jpg" alt="home mid fidelity example">
                         <img src="img/website-imgs/recipe.jpg" alt="recipe mid fidelity example">
@@ -200,7 +205,8 @@
                 <div class="text-block">
                     <h3>Mood Board</h3>
                     <p>This is where my UI process started. The idea was to create a fun looking app. So, as users enter the website the colours would be inviting. These are my inspiration images.</p>
-                    <div class="ui-sliders">
+                </div>
+                    <div class="ui-sliders image-block">
                         <h4>Mood</h4>
                         <div class="slide-wrapper">
                             <img src="img/website-imgs/jason-briscoe-unsplash.jpg" alt="mood image 1">
