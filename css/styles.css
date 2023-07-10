@@ -132,7 +132,8 @@ nav ul {
   flex-direction: column;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
@@ -148,7 +149,7 @@ nav ul {
   display: none;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
 }
 
@@ -160,13 +161,13 @@ nav ul {
   border-radius: 15px;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
   border-top: 1px solid rgba(255,127,80,0.5);
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
@@ -197,7 +198,8 @@ nav a:visited {
   color: #ffff;
 } 
 
-nav a:hover, nav a:focus {
+nav a:hover, 
+nav a:focus {
   text-decoration: none;
   color: #ff9878;
 }
