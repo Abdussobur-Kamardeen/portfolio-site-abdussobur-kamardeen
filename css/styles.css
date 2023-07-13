@@ -31,7 +31,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.25em;
+  font-size: 1.5em;
   font-weight: 600;
   margin-bottom: 0;
 }
@@ -97,13 +97,13 @@ a:active { /* selected link */
 
 .button.contact {
   background-color: transparent;
-  color: #dc93fe;
+  color: #f17c3a;
   text-transform: uppercase;
-  border: 2px solid #dc93fe;
+  border: 2px solid #f17c3a;
 }
 
 .button.contact:hover {
-  background-color: #dc93fe;
+  background-color: #f17c3a;
   color: #ffff;
 }
 
@@ -276,8 +276,10 @@ html {
   gap: 1em;
   font-weight: 600;
 }
-.skills-tools .column:last-child ul li{
-  background-color: #f8825d;
+
+.skills-tools span {
+  margin-right: 20px;
+  color: #ffc46b;
 }
 
 .project-welcome {
@@ -290,9 +292,6 @@ html {
 
 .skills-tools li {
   padding: 16px 20px;
-  text-align: center;
-  background-color: #ffb951;
-  border-radius: 15px;
 }
 
 .about img {
@@ -376,6 +375,27 @@ footer h2 {
   justify-content: space-around;
   align-items: flex-end;
   color: #c3fbff;
+}
+
+.brief-summary strong {
+  font-weight: 700;
+} 
+
+.brief-summary {
+  text-align: left;
+  background: rgba(255,255,255, 0.25);
+  padding: 30px 20px;
+  border-radius: 0 0 15px 15px;
+}
+
+.summary-wrapper span {
+  display: block;
+}
+
+.project-welcome img {
+  line-height: 0;
+  display: block;
+  border-radius: 15px 15px 0 0;
 }
 
 .stars-wrapper span:first-child, .stars-wrapper span:last-child {
@@ -559,5 +579,19 @@ main img {
 
   .ui-sliders .slide-wrapper img {
     max-width: 400px;
+  }
+
+  .brief-summary {
+    display: flex;
+    gap: 60px;
+    padding: 30px 60px;
+  }
+
+  .summary-wrapper {
+    width: 50%;
+  }
+
+  .project-welcome img {
+
   }
 }
