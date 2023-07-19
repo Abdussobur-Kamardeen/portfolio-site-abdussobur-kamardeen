@@ -402,6 +402,11 @@ footer h2 {
   display: block;
 }
 
+.resume {
+  text-align: center;
+  padding-bottom: 3em;
+}
+
 .project-welcome img {
   line-height: 0;
   display: block;
